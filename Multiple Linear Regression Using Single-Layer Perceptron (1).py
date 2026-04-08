@@ -91,14 +91,12 @@ for epoch in range(epochs):
 y_test_pred = np.dot(X_test, W) + b
 
 test_mse = mse(y_test, y_test_pred)
-r2 = r2_score(y_test, y_test_pred)
 
-print("\n==============================")
+
 print("Training Complete")
-print("==============================")
 print(f"Final Training Loss: {losses[-1]:.4f}")
 print(f"Test MSE: {test_mse:.4f}")
-print(f"R2 Score: {r2:.4f}")
+
 
 # ============================================
 # 7. PLOT LOSS CURVE
